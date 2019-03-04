@@ -1,7 +1,9 @@
+import css from '../styles.css'
+
 const FilterSection = () => (
   <div>
     <h3>Color:</h3>
-    <div>
+    <div className={css.colorFilters}>
       <a>Red</a>
       <a>Green</a>
       <a>Blue</a>
