@@ -1,19 +1,17 @@
 import {withRouter} from 'next/router'
 import flags from '../flagData'
 import FilterSection from '../components/FilterSection'
+import FlagSection from '../components/FlagSection'
 
 const Home = withRouter((props) => {
-  if (props.router.query.colors) {
-    console.log("colors: ")
-    console.log(props.router.query.colors)
-  } else {
-    console.log('no colors selected')
-  }
+  const colorParams = props.router.query.colors ? props.router.query.colors.split() : []
   return (
   	<div>
   		<h1>Flag Identifier</h1>
   		<FilterSection />
-  		<img src="https://www.countryflags.io/AD/flat/64.png" />
+      <FlagSection 
+        query={colorParams}
+      />
 		</div>
 	)
 })
