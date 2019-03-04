@@ -6,7 +6,7 @@ const ColorFilter = (props) => {
     // should remove the color from the query/params
 // else this color should be added to the params/query
     // the link includes the color
-  const paramLink = '/?color=' // + whatever is decided in logic above
+  const paramLink = '/?colors=' + props.color
   return (
     <Link href={paramLink}>
       <a>{props.color}</a>
