@@ -1,4 +1,7 @@
+import flags from '../flagData'
+
 function Home () {
+	console.log(flags)
   return (
   	<div>
   		<h1>Flag Identifier</h1>

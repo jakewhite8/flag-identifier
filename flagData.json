@@ -1,0 +1,26 @@
+{
+  "Armenia": {
+    "code": "AM",
+    "colors": ["red", "blue", "orange"],
+    "crest": false,
+    "star": false
+  },
+  "Albania": {
+    "code": "AL",
+    "colors": ["red", "black"],
+    "crest": true,
+    "star": false
+  },
+  "Belgium": {
+    "code": "BE",
+    "colors": ["red", "yellow", "black"],
+    "crest": false,
+    "star": false
+  },
+  "Bhutan": {
+    "code": "BT",
+    "colors": ["orange", "yellow", "white"],
+    "crest": true,
+    "star": false
+  }  
+}
