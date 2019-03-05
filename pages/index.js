@@ -6,7 +6,8 @@ import FlagSection from '../components/FlagSection'
 const Home = withRouter((props) => {
   // Organize the URL params into an array
   let colorParams = [];
-  if (props.router.query.colors) {
+  const routeParameters = props.router  && props.router.query && props.router.query.colors
+  if (routeParameters) {
     if (props.router.query.colors.includes(" ")) {
       colorParams = props.router.query.colors.split(" ");
     } else {
