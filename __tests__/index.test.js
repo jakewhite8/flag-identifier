@@ -14,10 +14,4 @@ describe('With Enzyme', () => {
   })
 })
 
-describe('With Snapshot Testing', () => {
-  it('App shows "Flag Identifier!"', () => {
-    const component = renderer.create(<Home />)
-    const tree = component.toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-})
+

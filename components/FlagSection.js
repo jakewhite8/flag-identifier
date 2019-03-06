@@ -23,8 +23,9 @@ const FlagSection = (props) => {
   const currentFlags = calculateActiveFlags(props.query)
   return (
     <div>
+    <h1>Flags</h1>
       {currentFlags.map((flag) => (
-        <img key={flag} src={`https://www.countryflags.io/${flag}/flat/64.png`} />
+        <img className='flagSection' key={flag} src={`https://www.countryflags.io/${flag}/flat/64.png`} />
       ))}
     </div>
   )
