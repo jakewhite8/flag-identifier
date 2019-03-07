@@ -1,8 +1,32 @@
 {
-  "Armenia": {
-    "code": "AM",
-    "colors": ["red", "blue", "orange"],
+  "Andorra": {
+    "code": "AD",
+    "colors": ["red", "yellow", "blue"],
+    "crest": true,
+    "star": false
+  },
+  "United Arab Emirates": {
+    "code": "AE",
+    "colors": ["red", "white", "green", "black"],
     "crest": false,
+    "star": false
+  },
+  "Afghanistan": {
+    "code": "AF",
+    "colors": ["red", "green", "black"],
+    "crest": true,
+    "star": false
+  },
+  "Antigua and Barbuda": {
+    "code": "AG",
+    "colors": ["red", "blue", "white", "black", "yellow"],
+    "crest": true,
+    "star": false
+  },
+  "Anguilla": {
+    "code": "AI",
+    "colors": ["red", "blue", "white", "orange"],
+    "crest": true,
     "star": false
   },
   "Albania": {
@@ -11,12 +35,128 @@
     "crest": true,
     "star": false
   },
+  "Netherlands Antilles": {
+    "code": "AN",
+    "colors": ["blue", "red", "white"],
+    "crest": true,
+    "star": false
+  },
+  "Angola": {
+    "code": "AO",
+    "colors": ["red", "black", "yellow"],
+    "crest": true,
+    "star": true
+  },
+  "Antarctica": {
+    "code": "AQ",
+    "colors": ["white", "blue"],
+    "crest": true,
+    "star": false
+  },
+  "Argentina": {
+    "code": "AR",
+    "colors": ["white", "blue", "yellow"],
+    "crest": true,
+    "star": false
+  },
+  "American Samoa": {
+    "code": "AS",
+    "colors": ["red", "blue", "white", "brown"],
+    "crest": true,
+    "star": false
+  },
+  "Austria": {
+    "code": "AT",
+    "colors": ["red", "white"],
+    "crest": false,
+    "star": false
+  },
+  "Australia": {
+    "code": "AU",
+    "colors": ["red", "blue", "white"],
+    "crest": false,
+    "star": true
+  },
+  "Aruba": {
+    "code": "AW",
+    "colors": ["red", "blue", "yellow"],
+    "crest": false,
+    "star": true
+  },
+  "Aland Islands": {
+    "code": "AX",
+    "colors": ["red", "blue", "yellow"],
+    "crest": false,
+    "star": false
+  },
+  "Azerbaijan": {
+    "code": "AZ",
+    "colors": ["red", "blue", "green", "white"],
+    "crest": true,
+    "star": false
+  },
+  "Bosnia and Herzegovina": {
+    "code": "BA",
+    "colors": ["yellow", "blue", "white"],
+    "crest": false,
+    "star": true
+  },
+  "Barbados": {
+    "code": "BB",
+    "colors": ["yellow", "blue", "black"],
+    "crest": true,
+    "star": false
+  },
+  "Bangladesh": {
+    "code": "BD",
+    "colors": ["green", "red"],
+    "crest": false,
+    "star": false
+  },
   "Belgium": {
     "code": "BE",
     "colors": ["red", "yellow", "black"],
     "crest": false,
     "star": false
   },
+  "Burkina Faso": {
+    "code": "BF",
+    "colors": ["red", "green", "yellow"],
+    "crest": false,
+    "star": true
+  },
+  "Bulgaria": {
+    "code": "BG",
+    "colors": ["red", "green"],
+    "crest": false,
+    "star": false
+  },
+  "Bahrain": {
+    "code": "BH",
+    "colors": ["red", "white"],
+    "crest": false,
+    "star": false
+  },
+  "Burundi": {
+    "code": "BI",
+    "colors": ["red", "green", "white"],
+    "crest": false,
+    "star": true
+  },
+  "Benin": {
+    "code": "BJ",
+    "colors": ["red", "green", "yellow"],
+    "crest": false,
+    "star": false
+  },
+  "Saint Barthelemy": {
+    "code": "BL",
+    "colors": ["red", "blue", "yellow"],
+    "crest": true,
+    "star": false
+  },
+  
+  
   "Bhutan": {
     "code": "BT",
     "colors": ["orange", "yellow", "white"],
