@@ -17,7 +17,7 @@ const Home = withRouter((props) => {
 
   return (
   	<div>
-  		<h1>Flag Identifier</h1>
+  		<h1 align="center">Flag Identifier</h1>
   		<FilterSection
         query={colorParams}
       />

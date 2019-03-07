@@ -1,4 +1,6 @@
 import flags from '../flagData'
+import css from '../styles.css'
+
 
 function calculateActiveFlags (colorsArray) {
   
@@ -23,9 +25,9 @@ const FlagSection = (props) => {
   const currentFlags = calculateActiveFlags(props.query)
   return (
     <div>
-    <h1>Flags</h1>
+    <h1 align="center">Flags</h1>
       {currentFlags.map((flag) => (
-        <img className='flagSection' key={flag} src={`https://www.countryflags.io/${flag}/flat/64.png`} />
+        <img className={css.flagSection} key={flag} src={`https://www.countryflags.io/${flag}/flat/64.png`} />
       ))}
     </div>
   )

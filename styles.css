@@ -1,3 +1,12 @@
-.colorFilters a {
+.colorFilters button {
   margin-right: 20px
+}
+
+.activeFilter {
+  background-color: #666;
+  color: white;
+}
+
+.flagSection {
+  padding: 5px 10px;
 }

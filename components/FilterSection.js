@@ -27,9 +27,11 @@ const ColorFilter = (props) => {
     }
   }
 
+  const hello = props.params.includes(props.color) ? css.foo : ''
+
   return (
     <Link href={paramLink}>
-      <a>{props.color}</a>
+      <button className={hello}>{props.color}</button>
     </Link>
   )
 }
@@ -37,8 +39,8 @@ const ColorFilter = (props) => {
 
 const FilterSection = (props) => (
   <div>
-    <h3>Color:</h3>
-    <div className={css.colorFilters}>
+    <h3 align="center">Color:</h3>
+    <div align='center' className={css.colorFilters}>
       <ColorFilter
         color='red' 
         params={props.query}
