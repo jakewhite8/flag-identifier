@@ -155,12 +155,83 @@
     "crest": true,
     "star": false
   },
-  
-  
+  "Bermuda": {
+    "code": "BM",
+    "colors": ["red", "white", "blue", "green"],
+    "crest": true,
+    "star": false
+  },
+  "Brunei Darussalam": {
+    "code": "BN",
+    "colors": ["red", "black", "white", "yellow"],
+    "crest": true,
+    "star": false
+  },
+  "Bolivia": {
+    "code": "BO",
+    "colors": ["red", "green", "yellow"],
+    "crest": true,
+    "star": false
+  },
+  "Bonaire, Sint Eustatius and Saba": {
+    "code": "BQ",
+    "colors": ["red", "white", "blue"],
+    "crest": false,
+    "star": false
+  },
+  "Brazil": {
+    "code": "BR",
+    "colors": ["blue", "green", "yellow"],
+    "crest": true,
+    "star": false
+  },
+  "Bahamas": {
+    "code": "BS",
+    "colors": ["blue", "black", "yellow"],
+    "crest": false,
+    "star": false
+  },
   "Bhutan": {
     "code": "BT",
     "colors": ["orange", "yellow", "white"],
     "crest": true,
     "star": false
-  }  
+  },
+  "Bouvet Island": {
+    "code": "BV",
+    "colors": ["red", "blue", "white"],
+    "crest": false,
+    "star": false
+  },
+  "Botswana": {
+    "code": "BW",
+    "colors": ["black", "blue", "white"],
+    "crest": false,
+    "star": false
+  },
+  "Belarus": {
+    "code": "BY",
+    "colors": ["red", "green", "white"],
+    "crest": true,
+    "star": false
+  },
+  "Belize": {
+    "code": "BZ",
+    "colors": ["red", "green", "white", "blue"],
+    "crest": true,
+    "star": false
+  },
+  "Canada": {
+    "code": "CA",
+    "colors": ["red", "white"],
+    "crest": true,
+    "star": false
+  },
+  "Cocos (Keeling) Islands": {
+    "code": "CC",
+    "colors": ["green", "yellow"],
+    "crest": true,
+    "star": true
+  }
+  
 }

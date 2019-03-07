@@ -11,14 +11,14 @@ describe('With Enzyme', () => {
   it('Flag Section displays 3 flags with red in it', () => {
     const wrapper = shallow(<FlagSection/>).setProps({query:['red']})
 
-    expect(wrapper.find('img')).toHaveLength(3)
+    expect(wrapper.find('img')).toHaveLength(30)
 
   })
 
   it('Flag Section displays 2 flags with red and black in it', () => {
     const wrapper = shallow(<FlagSection/>).setProps({query:['red', 'black']})
 
-    expect(wrapper.find('img')).toHaveLength(2)
+    expect(wrapper.find('img')).toHaveLength(7)
 
 
   })
