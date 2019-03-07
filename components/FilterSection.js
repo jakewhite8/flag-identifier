@@ -27,11 +27,12 @@ const ColorFilter = (props) => {
     }
   }
 
-  const hello = props.params.includes(props.color) ? css.foo : ''
+  //If the color's filter is active - display accordingly
+  const activeButton = props.params.includes(props.color) ? css.activeFilter : css.nonActiveFilter;
 
   return (
     <Link href={paramLink}>
-      <button className={hello}>{props.color}</button>
+      <button className={activeButton}>{props.color}</button>
     </Link>
   )
 }
