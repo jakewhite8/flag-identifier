@@ -17,6 +17,9 @@ while persist:
 
   color_array = list()
   num = raw_input("Enter how many colors are in the flag: ")
+  if not num:
+    print "valid number required"
+    exit(0)
   print 'Enter colors in array: '
   for i in range(int(num)):
       color = raw_input("color: ")
