@@ -1,54 +1,72 @@
 import json
 
-countryName = raw_input("What is the Country Name? ")
-type(countryName)
+persist = True
 
-countryCode = raw_input("What is the Country Code? ")
-type(countryCode)
+while persist:
 
-color_array = list()
-num = raw_input("Enter how many colors are in the flag:")
-print 'Enter colors in array: '
-for i in range(int(num)):
-    color = raw_input("color: ")
-    color_array.append(color)
-print 'ARRAY: ',color_array
+  countryName = countryCode = countryCrestInput = countryStarInput = ''
+  color_array = []
+  countryCrest = countryStar = confirm = None
+  new_object = {}
 
-countryCrest = raw_input("Is there a crest in the flag? (y/n): ")
-type(countryCrest)
+  countryName = raw_input("What is the Country Name? ")
+  type(countryName)
 
-if countryCrest == 'y':
-  countryCrest = True
-elif countryCrest == 'n':
-  countryCrest = False
-else:
-  print "response not recognized"
-  exit(0)
+  countryCode = raw_input("What is the Country Code? ")
+  type(countryCode)
 
-countryStar = raw_input("Is a star present in the flag? (y/n): ")
-type(countryStar)
+  color_array = list()
+  num = raw_input("Enter how many colors are in the flag: ")
+  print 'Enter colors in array: '
+  for i in range(int(num)):
+      color = raw_input("color: ")
+      color_array.append(color)
+  print 'ARRAY: ',color_array
 
-if countryStar == 'y':
-  countryStar = True
-elif countryStar == 'n':
-  countryStar = False
-else:
-  print "response not recognized"
-  exit(0)
+  def createBoolean(input):
+    if input == 'y':
+      return True
+    elif input == 'n':
+      return False
+    else:
+      print "response not recognized"
+      exit(0)
 
-new_object = {
-  countryName : {
-    "code": countryCode,
-    "colors": color_array,
-    "crest": countryCrest,
-    "star": countryStar
-  }
-}
+  countryCrestInput = raw_input("Is there a crest in the flag? (y/n): ")
+  type(countryCrestInput)
 
-with open('flagData.json') as f:
-  data = json.load(f)
+  countryCrest = createBoolean(countryCrestInput)
 
-data.update(new_object)
+  countryStarInput = raw_input("Is a star present in the flag? (y/n): ")
+  type(countryStarInput)
 
-with open('flagData.json', 'w') as f:
-  json.dump(data, f)
+  countryStar = createBoolean(countryStarInput)
+
+  print "Confirm:"
+  print "Country Name: " + countryName
+  print "Country Code: " + countryCode
+  print "Country Colors: ", color_array
+  print "Country Crest: " + str(countryCrest)
+  print "Country Star: " + str(countryStar)
+
+  confirm = createBoolean(raw_input('Continue? (y/n): '))
+
+  if confirm:
+    new_object = {
+      countryName : {
+        "code": countryCode,
+        "colors": color_array,
+        "crest": countryCrest,
+        "star": countryStar
+      }
+    }
+
+    with open('flagData.json') as f:
+      data = json.load(f)
+
+    data.update(new_object)
+
+    with open('flagData.json', 'w') as f:
+      json.dump(data, f)
+
+  persist = createBoolean(raw_input("New data Entry? (y/n): "))
