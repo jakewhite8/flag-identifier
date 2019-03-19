@@ -2,7 +2,7 @@ import flags from '../flagData'
 import css from '../styles.css'
 
 
-function calculateActiveFlags (colorsArray) {
+function calculateActiveFlags (query) {
   
   function containsAllColors(paramColors, flagColors) {
     for (var j = 0; j < paramColors.length; j++) {
@@ -14,7 +14,13 @@ function calculateActiveFlags (colorsArray) {
   let activeFlags = []
   let flagArray = Object.keys(flags)
   for (var i = 0; i < flagArray.length; i++) {
-    if (!colorsArray || containsAllColors(colorsArray, flags[flagArray[i]]["colors"])) {
+    let currentFlag = flags[flagArray[i]]
+
+    let satisfyColorRequirements = !query.colors || containsAllColors(query.colors, currentFlag["colors"])
+    let satisfyCrestRequirements = (undefined == query.crest) || query.crest == currentFlag["crest"]
+    let satisfyStarRequirements = (undefined == query.star) || query.star == currentFlag["star"]
+
+    if (satisfyColorRequirements && satisfyCrestRequirements && satisfyStarRequirements) {
       activeFlags.push(flags[flagArray[i]].code)
     }
   }
