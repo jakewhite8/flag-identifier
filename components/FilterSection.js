@@ -2,30 +2,8 @@ import css from '../styles.css'
 import Link from 'next/link'
 
 const ColorFilter = (props) => { 
-  let paramLink = '/?colors=';
-
-  // if this color is included in the query, this link 
-  // should remove the color from the query
-  if (props.colorParams.includes(props.color)) {
-    if (props.colorParams.length === 1) {
-      paramLink = '/';
-    } else {
-      // Create an array with the removed color
-      const updatedParams = props.colorParams.filter((color) => color !== props.color);
-      for (var i = 0; i < updatedParams.length; i++) {
-        paramLink += i === 0 ? updatedParams[i] : '+' + updatedParams[i];
-      }
-    }
-  } else {
-  // else this color should be added to the params/query
-  // the link includes the color
-    paramLink += props.color;
-    if (props.colorParams.length) {
-      for (var i = 0; i < props.colorParams.length; i++) {
-        paramLink += '+' + props.colorParams[i];
-      }
-    }
-  }
+  
+  let paramLink = props.buildLink('color', props.color)
 
   //If the color's filter is active - display accordingly
   const activeButton = props.colorParams.includes(props.color) ? css.activeFilter : css.nonActiveFilter;
@@ -39,17 +17,17 @@ const ColorFilter = (props) => {
 
 const CrestFilter = (props) => {
 
-  let crestLink = '/?crest=true'
-  let nonCrestLink = '/?crest=false'
+  let routeWithCrest = props.buildLink('crest', true)
+  let routeWithoutCrest = props.buildLink('crest', false)
 
   return (
     <div>
       <h3 align="center">Crest:</h3>
       <div align='center' className={css.colorFilters}>
-        <Link href={nonCrestLink}>
+        <Link href={routeWithoutCrest}>
           <button>No Crest</button>
         </Link>
-        <Link href={crestLink}>
+        <Link href={routeWithCrest}>
           <button>Crest</button>
         </Link>
       </div>
@@ -60,17 +38,17 @@ const CrestFilter = (props) => {
 
 const StarFilter = (props) => {
 
-  let starLink = '/?star=true'
-  let nonStarLink = '/?star=false'
+  let routeWithStar = props.buildLink('star', true)
+  let routeWithoutStar = props.buildLink('star', false)
 
   return (
     <div>
       <h3 align="center">Star(s):</h3>
       <div align='center' className={css.colorFilters}>
-        <Link href={nonStarLink}>
+        <Link href={routeWithoutStar}>
           <button>No Stars</button>
         </Link>
-        <Link href={starLink}>
+        <Link href={routeWithStar}>
           <button>Stars</button>
         </Link>
       </div>
@@ -84,43 +62,59 @@ const FilterSection = (props) => (
     <h3 align="center">Color:</h3>
     <div align='center' className={css.colorFilters}>
       <ColorFilter
-        color='red' 
-        colorParams={props.query.colors}
+        color='red'
+        queryObject={props.queryObject}
+        buildLink={props.buildLink}
+        colorParams={props.queryObject.colors}
       />
       <ColorFilter
         color='green' 
-        colorParams={props.query.colors}
+        buildLink={props.buildLink}
+        queryObject={props.queryObject}
+        colorParams={props.queryObject.colors}
       />
       <ColorFilter
         color='blue' 
-        colorParams={props.query.colors}
+        buildLink={props.buildLink}
+        queryObject={props.queryObject}
+        colorParams={props.queryObject.colors}
       />
       <ColorFilter
         color='orange' 
-        colorParams={props.query.colors}
+        buildLink={props.buildLink}
+        queryObject={props.queryObject}
+        colorParams={props.queryObject.colors}
       />
       <ColorFilter
         color='purple' 
-        colorParams={props.query.colors}
+        buildLink={props.buildLink}
+        queryObject={props.queryObject}
+        colorParams={props.queryObject.colors}
       />
       <ColorFilter
         color='yellow' 
-        colorParams={props.query.colors}
+        buildLink={props.buildLink}
+        queryObject={props.queryObject}
+        colorParams={props.queryObject.colors}
       />
       <ColorFilter
         color='white' 
-        colorParams={props.query.colors}
+        buildLink={props.buildLink}
+        queryObject={props.queryObject}
+        colorParams={props.queryObject.colors}
       />
       <ColorFilter
         color='black' 
-        colorParams={props.query.colors}
+        buildLink={props.buildLink}
+        queryObject={props.queryObject}
+        colorParams={props.queryObject.colors}
       />
     </div>
     <CrestFilter 
-      params={props.query}
+      buildLink={props.buildLink}
       />
     <StarFilter 
-      params={props.query}
+      buildLink={props.buildLink}
       />
   </div>
 )
