@@ -8,6 +8,9 @@ Flags are generated from https://countryflags.io/
 - Start the website by running: ```npm run dev```
 - The website can then be found at http://localhost:3000/
 
+### How to run tests:
+- From the root run ```npm run test```
+
 ### How to run the data bulding tool:
 -- Within the repo is a tool that can be run to add flag data to the data set
 - From the root directory run: ```python addFlagData.py```
