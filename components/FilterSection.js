@@ -116,6 +116,14 @@ const FilterSection = (props) => (
       buildLink={props.buildLink}
       starParams={props.queryObject.star}
       />
+    <div>
+      <h3 align="center">Clear:</h3>
+      <div align='center'>
+        <Link href={'/'}>
+          <button>Clear</button>
+        </Link>
+      </div>
+    </div>
   </div>
 )
 
