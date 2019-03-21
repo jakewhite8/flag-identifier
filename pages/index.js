@@ -8,8 +8,6 @@ const Home = withRouter((props) => {
   // Organize the color params into an array
   function organizeColorParams(propsActions) {
     const routeParameters = propsActions.router  && propsActions.router.query && propsActions.router.query.colors
-    // console.log('routeParameters')
-    // console.log(routeParameters)
     if (routeParameters) {
       if (propsActions.router.query.colors.includes(" ")) {
         return propsActions.router.query.colors.split(" ");
@@ -21,7 +19,6 @@ const Home = withRouter((props) => {
     }
   }
 
-  // let queryObject = {}
 
   let colorParams = organizeColorParams(props);
 
@@ -157,6 +154,7 @@ const Home = withRouter((props) => {
         query={queryObject}
       />
     </div>
+
   )
 })
 
