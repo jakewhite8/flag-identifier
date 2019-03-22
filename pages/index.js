@@ -144,12 +144,11 @@ const Home = withRouter((props) => {
 
   return (
     <div>
-      <h1 align="center">Flag Identifier</h1>
       <FilterSection
         queryObject={queryObject}
         route={route}
         buildLink={buildLink}
-      />
+      />  
       <FlagSection 
         query={queryObject}
       />

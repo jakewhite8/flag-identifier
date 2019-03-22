@@ -1,5 +1,21 @@
+.flagSection {
+  margin-left: 200px;
+}
+
+.filterSection {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: gray;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
 .colorFilters button {
-  margin-right: 20px
+  margin: 0 10px
 }
 
 .activeFilter {
@@ -12,6 +28,6 @@
   color: black;
 }
 
-.flagSection {
+.flagImage {
   padding: 5px 10px;
 }

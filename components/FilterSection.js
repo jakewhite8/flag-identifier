@@ -64,7 +64,7 @@ const StarFilter = (props) => {
 
 
 const FilterSection = (props) => (
-  <div>
+  <div className={css.filterSection}>
     <h3 align="center">Color:</h3>
     <div align='center' className={css.colorFilters}>
       <ColorFilter

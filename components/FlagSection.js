@@ -30,11 +30,12 @@ function calculateActiveFlags (query) {
 const FlagSection = (props) => {
   const currentFlags = calculateActiveFlags(props.query)
   return (
-    <div>
-    <h1 align="center">Flags</h1>
-      {currentFlags.map((flag) => (
-        <img title={flag} className={css.flagSection} key={flag} src={`https://www.countryflags.io/${flag}/flat/64.png`} />
-      ))}
+    <div className={css.flagSection}>
+      <h1 align="center">Flag Identifier</h1>
+      <h1 align="center">Flags</h1>
+        {currentFlags.map((flag) => (
+          <img title={flag} className={css.flagImage} key={flag} src={`https://www.countryflags.io/${flag}/flat/64.png`} />
+        ))}
     </div>
   )
 }
