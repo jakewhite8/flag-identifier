@@ -25,7 +25,7 @@ const CrestFilter = (props) => {
 
   return (
     <div>
-      <h3 align="center">Crest:</h3>
+      <h5 align="left">Crest:</h5>
       <div align='center' className={css.colorFilters}>
         <Link href={routeWithoutCrest}>
           <button className={noCrestActiveButton}>No Crest</button>
@@ -49,7 +49,7 @@ const StarFilter = (props) => {
 
   return (
     <div>
-      <h3 align="center">Star(s):</h3>
+      <h5 align="left">Star:</h5>
       <div align='center' className={css.colorFilters}>
         <Link href={routeWithoutStar}>
           <button className={noStarActiveButton}>No Stars</button>
@@ -65,7 +65,7 @@ const StarFilter = (props) => {
 
 const FilterSection = (props) => (
   <div className={css.filterSection}>
-    <h3 align="center">Color:</h3>
+    <h5 align="left">Color:</h5>
     <div align='center' className={css.colorFilters}>
       <ColorFilter
         color='red'
@@ -117,8 +117,8 @@ const FilterSection = (props) => (
       starParams={props.queryObject.star}
       />
     <div>
-      <h3 align="center">Clear:</h3>
-      <div align='center'>
+      <h5 align="left">Clear:</h5>
+      <div align='center' className={css.clearButton}>
         <Link href={'/'}>
           <button>Clear</button>
         </Link>

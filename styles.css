@@ -2,6 +2,10 @@
   margin-left: 200px;
 }
 
+.flagSection h1 {
+  padding: 0 10px;
+}
+
 .filterSection {
   height: 100%;
   width: 200px;
@@ -9,13 +13,25 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: gray;
   overflow-x: hidden;
   padding-top: 20px;
+  border-right: solid;
+}
+
+.filterSection h5 {
+  font-family: serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.clearButton button {
+  margin: 10px
 }
 
 .colorFilters button {
-  margin: 0 10px
+  margin: 10px
 }
 
 .activeFilter {

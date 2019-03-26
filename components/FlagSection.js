@@ -32,10 +32,9 @@ const FlagSection = (props) => {
   return (
     <div className={css.flagSection}>
       <h1 align="center">Flag Identifier</h1>
-      <h1 align="center">Flags</h1>
-        {currentFlags.map((flag) => (
-          <img title={flag} className={css.flagImage} key={flag} src={`https://www.countryflags.io/${flag}/flat/64.png`} />
-        ))}
+      {currentFlags.map((flag) => (
+        <img title={flag} className={css.flagImage} key={flag} src={`https://www.countryflags.io/${flag}/flat/64.png`} />
+      ))}
     </div>
   )
 }
