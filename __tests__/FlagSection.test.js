@@ -8,7 +8,7 @@ import FlagSection from '../components/FlagSection.js'
 
 
 describe('With Enzyme', () => {
-  it('Flag Section displays 52 flags with red in it', () => {
+  it('Flag Section displays 77 flags with red in it', () => {
 
     let queryObject = {
       "colors": ['red'],
@@ -18,10 +18,10 @@ describe('With Enzyme', () => {
     
     const wrapper = shallow(<FlagSection query={queryObject} />)
 
-    expect(wrapper.find('img')).toHaveLength(52)
+    expect(wrapper.find('img')).toHaveLength(77)
   })
 
-  it('Flag Section displays 11 flags with red and black in it', () => {
+  it('Flag Section displays 16 flags with red and black in it', () => {
 
     let queryObject = {
       "colors": ['red', 'black'],
@@ -30,10 +30,10 @@ describe('With Enzyme', () => {
     }
     const wrapper = shallow(<FlagSection query={queryObject}/>).setProps({query:queryObject})
 
-    expect(wrapper.find('img')).toHaveLength(11)
+    expect(wrapper.find('img')).toHaveLength(16)
   })
 
-  it('Flag Section displays 3 flags with red, black, and a star', () => {
+  it('Flag Section displays 5 flags with red, black, and a star', () => {
 
     let queryObject = {
       "colors": ['red', 'black'],
@@ -42,10 +42,10 @@ describe('With Enzyme', () => {
     }
     const wrapper = shallow(<FlagSection query={queryObject}/>).setProps({query:queryObject})
 
-    expect(wrapper.find('img')).toHaveLength(3)
+    expect(wrapper.find('img')).toHaveLength(5)
   })
 
-  it('Flag Section displays 5 flags with red, green, no crest, and a star', () => {
+  it('Flag Section displays 7 flags with red, green, no crest, and a star', () => {
 
     let queryObject = {
       "colors": ['red', 'green'],
@@ -54,7 +54,7 @@ describe('With Enzyme', () => {
     }
     const wrapper = shallow(<FlagSection query={queryObject}/>).setProps({query:queryObject})
 
-    expect(wrapper.find('img')).toHaveLength(5)
+    expect(wrapper.find('img')).toHaveLength(7)
   })
 })
 
