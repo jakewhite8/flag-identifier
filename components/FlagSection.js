@@ -3,6 +3,7 @@ import css from '../styles.css'
 
 
 function calculateActiveFlags (query) {
+  // Iterate through all flags in the flagData dataset and return which ones match the criteria
   
   function containsAllColors(paramColors, flagColors) {
     for (var j = 0; j < paramColors.length; j++) {

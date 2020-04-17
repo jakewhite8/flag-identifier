@@ -17,3 +17,9 @@ Flags are generated from https://countryflags.io/
 - Follow directions given by the program
 - Country and Flag information can be found on the https://countryflags.io/ website
 
+### About the UI:
+- Built using the React framework Next.js
+- Flag data is stored statically in a JSON file on the client
+- The displayed flags are based off of the selected filters in the left column
+- When a user clicks on a filter, the URL (route) is updated with the new query parameters through Next.js' Link Component
+- The new parameters trigger the displayed flags to be updated

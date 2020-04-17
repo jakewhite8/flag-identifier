@@ -46,6 +46,7 @@ const Home = withRouter((props) => {
   }
 
 
+  // This function builds the routes for each filter that, when clicked on, update the flags displayed
   function buildLink(filter, input) {
 
     let newLink = '?'
@@ -53,6 +54,7 @@ const Home = withRouter((props) => {
 
     let colorsActive = queryObject && queryObject["colors"];
     // if building a link for color 
+    // - would be nice if this was a switch statement 
     if (filter ==='color') {
       // are there active colors?
       if (colorsActive.length > 0) {
