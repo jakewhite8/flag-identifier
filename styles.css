@@ -26,6 +26,11 @@
   margin-bottom: 0;
 }
 
+.filterSection button {
+  border-radius: 5px;
+  outline: none;
+}
+
 .clearButton button {
   margin: 10px
 }
