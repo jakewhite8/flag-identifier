@@ -22,7 +22,10 @@ function calculateActiveFlags (query) {
     let satisfyStarRequirements = (undefined == query.star) || query.star == currentFlag["star"]
 
     if (satisfyColorRequirements && satisfyCrestRequirements && satisfyStarRequirements) {
-      activeFlags.push(flags[flagArray[i]].code)
+      activeFlags.push({
+        code: currentFlag.code,
+        name: flagArray[i],
+      })
     }
   }
   return activeFlags
@@ -34,7 +37,7 @@ const FlagSection = (props) => {
     <div className={css.flagSection}>
       <h1 align="center">Flag Identifier</h1>
       {currentFlags.map((flag) => (
-        <img title={flag} className={css.flagImage} key={flag} src={`https://www.countryflags.io/${flag}/flat/64.png`} />
+        <img title={flag.name} className={css.flagImage} key={flag.code} src={`https://www.countryflags.io/${flag.code}/flat/64.png`} />
       ))}
     </div>
   )
