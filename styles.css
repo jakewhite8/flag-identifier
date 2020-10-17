@@ -6,6 +6,10 @@
   padding: 0 10px;
 }
 
+.flagSection h6 {
+  text-align: center;
+}
+
 .filterSection {
   height: 100%;
   width: 200px;

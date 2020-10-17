@@ -41,6 +41,7 @@ const FlagSection = (props) => {
           <img title={flag.name} className={css.flagImage} src={`https://www.countryflags.io/${flag.code}/flat/64.png`} />
         </a>
       ))}
+      <h6>Flags provided by <a target="_blank" href="https://www.countryflags.io">www.countryflags.io</a></h6>
     </div>
   )
 }
