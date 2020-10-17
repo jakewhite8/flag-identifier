@@ -2,6 +2,7 @@ import {withRouter} from 'next/router'
 import flags from '../flagData'
 import FilterSection from '../components/FilterSection'
 import FlagSection from '../components/FlagSection'
+import Head from 'next/head'
 
 const Home = withRouter((props) => {
 
@@ -146,6 +147,10 @@ const Home = withRouter((props) => {
 
   return (
     <div>
+      <Head>
+        <title>Flag Identifier</title>
+        <link rel="shortcut icon" type="image/png" href="/static/globe.png" />
+      </Head> 
       <FilterSection
         queryObject={queryObject}
         route={route}
