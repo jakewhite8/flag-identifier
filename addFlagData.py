@@ -20,7 +20,7 @@ while persist:
   if not num:
     print "valid number required"
     exit(0)
-  print 'Enter colors in array: '
+  print 'Enter each color: '
   for i in range(int(num)):
       color = raw_input("color: ")
       color_array.append(color)
