@@ -103,6 +103,11 @@ const FilterSection = (props) => (
         colorParams={props.queryObject.colors}
       />
       <ColorFilter
+        color='brown' 
+        buildLink={props.buildLink}
+        colorParams={props.queryObject.colors}
+      />
+      <ColorFilter
         color='black' 
         buildLink={props.buildLink}
         colorParams={props.queryObject.colors}
