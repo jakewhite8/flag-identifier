@@ -38,7 +38,7 @@ const FlagSection = (props) => {
       <h1 align="center">Flag Identifier</h1>
       {currentFlags.map((flag) => (
         <a target="_blank" key={flag.code} href={`https://www.google.com/search?q=${flag.name.split(" ").join("+")}`}>
-          <img title={flag.name} className={css.flagImage} src={`/${flag.code}.png`} />
+          <img title={flag.name} className={css.flagImage} src={`https://www.countryflags.io/${flag.code}/flat/64.png`} />
         </a>
       ))}
       <h6>Flags provided by <a target="_blank" href="https://www.countryflags.io">www.countryflags.io</a></h6>
