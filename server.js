@@ -9,6 +9,8 @@ app.prepare()
   .then(() => {
     const server = express()
 
+    server.use(express.static(__dirname + '/public'));
+
     server.get('*', (req, res) => {
       return handle(req, res)
     })
