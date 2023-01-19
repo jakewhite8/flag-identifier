@@ -17,10 +17,10 @@ Flags are generated from https://countryflags.io/
 -- Within the repo is a tool that can be run to add flag data to the data set
 - From the root directory run: ```python addFlagData.py```
 - Follow directions given by the program
-- Country and Flag information can be found on the https://countryflags.io/ website
+- Flag information can be found on the https://countryflags.io/ website
 
 ### About the UI:
-- Built using the React framework Next.js
+- Built using the Next.js framework
 - Flag data is stored statically in a JSON file on the client
 - The displayed flags are based off of the selected filters in the left column
 - When a user clicks on a filter, the URL (route) is updated with the new query parameters through Next.js' Link Component
