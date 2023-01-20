@@ -149,6 +149,7 @@ const Home = withRouter((props) => {
     <div>
       <Head>
         <title>Flag Identifier</title>
+        <meta name="description" content="The Flag Identifier website receives information pertaining to a flag's physical attributes with the goal of assisting in the identification of the flags country of origin"></meta>
         <link rel="shortcut icon" type="image/png" href="/static/globe.png" />
       </Head> 
       <FilterSection
